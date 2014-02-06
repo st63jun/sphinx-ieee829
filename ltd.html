@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3. レベルテスト設計 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="4. レベルテストケース" href="ltc.html" />
+    <link rel="prev" title="2. レベルテスト計画" href="ltp.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ltc.html" title="4. レベルテストケース"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ltp.html" title="2. レベルテスト計画"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>3. レベルテスト設計<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>レベルテスト設計 (Level Test Design) はテストケースとテストの判定基準の詳細を記述する文書です。</p>
+<div class="section" id="id2">
+<h2>3.1. 記法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:ltd">
+<tt class="descname">.. ieee829:ltd::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:ltd" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト設計のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で文書識別番号を設定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">LTD-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:title</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:ltd">
+<tt class="descname">:ieee829:ltd:</tt><a class="headerlink" href="#role-ieee829:ltd" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト設計を参照します。<tt class="docutils literal"><span class="pre">:ieee829:ltd:`1`</span></tt> で <tt class="docutils literal"><span class="pre">LTD-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>3.2. 作成例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/3">http://www.qbook.jp/qptemplate/testieee829s/3</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:ltd:: 1
+   :title: レベルテスト設計 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+レベルテスト設計詳細
+====================
+
+テスト対象機能
+--------------
+
+アプローチの具体化
+------------------
+
+テスト識別子
+------------
+
+合否基準
+--------
+
+テスト成果物
+------------
+
+一般
+====
+
+用語集
+------
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. レベルテスト設計</a><ul>
+<li><a class="reference internal" href="#id2">3.1. 記法</a></li>
+<li><a class="reference internal" href="#id3">3.2. 作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ltp.html"
+                        title="previous chapter">2. レベルテスト計画</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ltc.html"
+                        title="next chapter">4. レベルテストケース</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/ltd.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ltc.html" title="4. レベルテストケース"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ltp.html" title="2. レベルテスト計画"
+             >previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

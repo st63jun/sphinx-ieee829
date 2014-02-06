@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>マスターテスト報告 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>マスターテスト報告<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>マスターテスト報告 (Master Test Report) は複数のレベルの総合的なテスト結果の概要を記述する文書です。マスターテスト報告は品証や検収のためにステークホルダーに提供するドキュメントとしても機能します。</p>
+<p>マスターテスト報告は:doc:<a href="#id2"><span class="problematic" id="id3">`</span></a>マスターテスト計画 &lt;mtp&gt;`とセットで作成されます。マスターテスト報告ではテストを実施したソフトウェアやテスト自体の品質の評価、異常報告の統計といった、テスト結果以外の重要な情報を記載します。</p>
+<div class="section" id="id4">
+<h2>記法<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:mtr">
+<tt class="descname">.. ieee829:mtr::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:mtr" title="Permalink to this definition">¶</a></dt>
+<dd><p>マスターテスト報告のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で文書識別番号を設定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">MTR-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:titile</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:mtr">
+<tt class="descname">:ieee829:mtr:</tt><a class="headerlink" href="#role-ieee829:mtr" title="Permalink to this definition">¶</a></dt>
+<dd><p>マスターテスト報告を参照します。<tt class="docutils literal"><span class="pre">:ieee829:mtr:`1`</span></tt> で <tt class="docutils literal"><span class="pre">MTR-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id5">
+<h2>作成例<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/10">http://www.qbook.jp/qptemplate/testieee829s/10</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:mtr:: 1
+   :title: マスターテスト報告 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+詳細
+====
+
+テスト結果全体の概要
+--------------------
+
+結論のための論拠
+----------------
+
+結論および推奨事項
+------------------
+
+一般
+====
+
+用語集
+------
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">マスターテスト報告</a><ul>
+<li><a class="reference internal" href="#id4">記法</a></li>
+<li><a class="reference internal" href="#id5">作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/mtp - コピー - コピー.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

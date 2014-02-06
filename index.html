@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sphinx IEEE829 Extensions &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="#" />
+    <link rel="next" title="1. マスターテスト計画" href="mtp.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="mtp.html" title="1. マスターテスト計画"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sphinx-ieee829-extensions">
+<h1>Sphinx IEEE829 Extensions<a class="headerlink" href="#sphinx-ieee829-extensions" title="Permalink to this headline">¶</a></h1>
+<p>ソフトウェアテストの文書の標準規格であるIEEE829 <a class="footnote-reference" href="#id6" id="id1">[1]</a> についての文書と、IEEE829に準拠した文書を作成・管理しやすくするための Sphinx <a class="footnote-reference" href="#id7" id="id2">[2]</a> の拡張プラグインについてのドキュメントです。</p>
+<p>素人が調べながら書いているので不適切な部分があるかもしれません。間違い等があればご指摘いただけると幸いです。</p>
+<dl class="docutils">
+<dt>ソースコード</dt>
+<dd><a class="reference external" href="https://github.com/st63jun/sphinx-ieee829">https://github.com/st63jun/sphinx-ieee829</a></dd>
+</dl>
+</div>
+<div class="section" id="ieee829">
+<h1>IEEE829について<a class="headerlink" href="#ieee829" title="Permalink to this headline">¶</a></h1>
+<p>IEEE829はソフトウェアのテストの各工程で作成する文書の標準規格です。以下の10の文書から構成されています。各文書の目的はWikipedia <a class="footnote-reference" href="#id8" id="id3">[3]</a> を参考に記述しています。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="mtp.html">1. マスターテスト計画</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltp.html">2. レベルテスト計画</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltd.html">3. レベルテスト設計</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltc.html">4. レベルテストケース</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltpr.html">5. レベルテスト手順</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltl.html">6. レベルテストログ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ar.html">7. 異常報告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltr.html">8. レベルテスト報告</a></li>
+</ul>
+</div>
+<p>開発者はこれらの標準に則ってテスト仕様を書くこともできますし、IEEE829を土台にして独自に様式を作成することもできます。</p>
+</div>
+<div class="section" id="id4">
+<h1>拡張プラグインについて<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<p><tt class="docutils literal"><span class="pre">extensions/ieee829.py</span></tt> が拡張プラグインのソースコードです。、IEEE829文書の作成のためのディレクティブやロールをサポートする <tt class="docutils literal"><span class="pre">ieee829</span></tt> というドメインを新たに追加します。</p>
+<p>このプラグインは（今のところ）以下の機能を持っています。</p>
+<ul class="simple">
+<li>文書識別番号の設定</li>
+<li>文書識別番号によるクロスリファレンス (例: <a class="reference internal" href="sample.html#mtp-9999" title="MTP-9999 マスターテスト計画書 サンプル"><cite>MTP-9999 マスターテスト計画書 サンプル</cite></a>)</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h1>参考資料<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td><a class="reference external" href="http://dx.doi.org/10.1109/IEEESTD.1998.88820">IEEE829-1998 Standard for Software and System Test Documentation</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td><a class="reference external" href="http://sphinx-doc.org/">http://sphinx-doc.org/</a></td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td><a class="reference external" href="https://en.wikipedia.org/wiki/IEEE_829">https://en.wikipedia.org/wiki/IEEE_829</a></td></tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sphinx IEEE829 Extensions</a></li>
+<li><a class="reference internal" href="#ieee829">IEEE829について</a></li>
+<li><a class="reference internal" href="#id4">拡張プラグインについて</a></li>
+<li><a class="reference internal" href="#id5">参考資料</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="mtp.html"
+                        title="next chapter">1. マスターテスト計画</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="mtp.html" title="1. マスターテスト計画"
+             >next</a> |</li>
+        <li><a href="#">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

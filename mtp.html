@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. マスターテスト計画 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="2. レベルテスト計画" href="ltp.html" />
+    <link rel="prev" title="Sphinx IEEE829 Extensions" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ltp.html" title="2. レベルテスト計画"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Sphinx IEEE829 Extensions"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>1. マスターテスト計画<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>マスターテスト計画 (Master Test Plan) はテストの全体的な進行・管理の計画ついて記述する文書です。これは1つのプロジェクトに対して作成されることをありますし、複数のプロジェクトに対して作成されることもあります。</p>
+<div class="section" id="id2">
+<h2>1.1. 記法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:mtp">
+<tt class="descname">.. ieee829:mtp::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:mtp" title="Permalink to this definition">¶</a></dt>
+<dd><p>マスターテスト計画のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で文書識別番号を設定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">MTP-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:title</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:mtp">
+<tt class="descname">:ieee829:mtp:</tt><a class="headerlink" href="#role-ieee829:mtp" title="Permalink to this definition">¶</a></dt>
+<dd><p>マスターテスト計画を参照します。<tt class="docutils literal"><span class="pre">:ieee829:mtp:`1`</span></tt> で <tt class="docutils literal"><span class="pre">MTP-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>1.2. 作成例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/1">http://www.qbook.jp/qptemplate/testieee829s/1</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:mtp:: 1
+   :title: マスターテスト計画 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+システム要旨と重要な特徴
+------------------------
+
+テスト要旨
+----------
+
+組織編成
+^^^^^^^^
+
+テスト全体日程
+^^^^^^^^^^^^^^
+
+整合性レベル概要
+^^^^^^^^^^^^^^^^
+
+リソースサマリ
+^^^^^^^^^^^^^^
+
+責任
+^^^^
+
+ツール、技術、方法、メトリクス
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+全体テスト計画詳細
+==================
+
+テストレベルの定義を含むテストプロセス
+--------------------------------------
+
+プロセス：管理
+^^^^^^^^^^^^^^
+
+アクティビティ：テスト作業の管理
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+プロセス：収集
+^^^^^^^^^^^^^^
+
+アクティビティ：取得支援テスト
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+プロセス：供給
+^^^^^^^^^^^^^^
+
+アクティビティ：テストの計画
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+プロセス：開発
+^^^^^^^^^^^^^^
+
+アクティビティ：コンセプト
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+アクティビティ：要件
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+アクティビティ：設計
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+アクティビティ：実装
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+アクティビティ：テスト
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+アクティビティ：インストール／点検
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+プロセス：運用
+^^^^^^^^^^^^^^
+
+アクティビティ：運用テスト
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+プロセス：保守
+^^^^^^^^^^^^^^
+
+アクティビティ：保守テスト
+&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;
+
+テスト文書要件
+--------------
+
+テスト管理要件
+--------------
+
+テスト報告要件
+--------------
+
+一般
+====
+
+用語集
+------
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. マスターテスト計画</a><ul>
+<li><a class="reference internal" href="#id2">1.1. 記法</a></li>
+<li><a class="reference internal" href="#id3">1.2. 作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Sphinx IEEE829 Extensions</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ltp.html"
+                        title="next chapter">2. レベルテスト計画</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/mtp.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ltp.html" title="2. レベルテスト計画"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Sphinx IEEE829 Extensions"
+             >previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

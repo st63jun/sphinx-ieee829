@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>7. 異常報告 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="8. レベルテスト報告" href="ltr.html" />
+    <link rel="prev" title="6. レベルテストログ" href="ltl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ltr.html" title="8. レベルテスト報告"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ltl.html" title="6. レベルテストログ"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>7. 異常報告<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>異常報告 (Anomaly Report) はテストの実施中に発生した、調査の必要性のある事項について記述する文書です。インシデントレポートや不具合レポートといった名前でも呼ばれますが、この文書ではソフトウェアの不具合だけではなく、テストの設計や手順の間違いといった広い意味での「異常」を取り扱います。</p>
+<p>異常報告にはテストに期待する結果と実際の結果、異常の発生日、異常について調査・解決の手助けとなる情報やエビデンスを含めます。また可能であれば発生した異常が引き起こす影響範囲も検討し記録します。</p>
+<div class="section" id="id2">
+<h2>7.1. 記法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:ar">
+<tt class="descname">.. ieee829:ar::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:ar" title="Permalink to this definition">¶</a></dt>
+<dd><p>異常報告のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で指定した固定IDを指定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">AR-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:title</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:ar">
+<tt class="descname">:ieee829:ar:</tt><a class="headerlink" href="#role-ieee829:ar" title="Permalink to this definition">¶</a></dt>
+<dd><p>異常報告を参照します。<tt class="docutils literal"><span class="pre">:ieee829:ar:`1`</span></tt> で <tt class="docutils literal"><span class="pre">AR-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>7.2. 作成例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/7">http://www.qbook.jp/qptemplate/testieee829s/7</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:ar:: 1
+   :title: 異常報告 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+詳細
+====
+
+要約
+----
+
+異常発見日
+----------
+
+発見した状況
+------------
+
+異常説明
+--------
+
+影響
+----
+
+重要度分類
+----------
+
+正しい結果
+----------
+
+ステータス（open, fixed など）
+-----------------------------
+
+結論・提案
+----------
+
+一般
+====
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">7. 異常報告</a><ul>
+<li><a class="reference internal" href="#id2">7.1. 記法</a></li>
+<li><a class="reference internal" href="#id3">7.2. 作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ltl.html"
+                        title="previous chapter">6. レベルテストログ</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ltr.html"
+                        title="next chapter">8. レベルテスト報告</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/ar.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ltr.html" title="8. レベルテスト報告"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ltl.html" title="6. レベルテストログ"
+             >previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

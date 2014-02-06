@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>8. レベルテスト報告 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" />
+    <link rel="prev" title="7. 異常報告" href="ar.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ar.html" title="7. 異常報告"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>8. レベルテスト報告<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>レベルテスト報告 (Level Test Report) は実施したテストの結果の概要を記述する文書です。また結果の評価と提案事項も記載します。</p>
+<p>レベルテスト報告はレベルテストの実施が1件完了するたびに作成します。</p>
+<div class="section" id="id2">
+<h2>8.1. 記法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:ltr">
+<tt class="descname">.. ieee829:ltr::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:ltr" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト報告のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で文書識別番号を設定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">LTR-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:title</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:ltr">
+<tt class="descname">:ieee829:ltr:</tt><a class="headerlink" href="#role-ieee829:ltr" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト報告を参照します。<tt class="docutils literal"><span class="pre">:ieee829:ltr:`1`</span></tt> で <tt class="docutils literal"><span class="pre">LTR-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>8.2. 作成例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/9">http://www.qbook.jp/qptemplate/testieee829s/9</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:ltr:: 1
+   :title: レベルテスト報告 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+詳細
+====
+
+テスト結果の概要
+----------------
+
+詳細テスト結果
+--------------
+
+判定理由
+--------
+
+総合評価・推奨事項
+------------------
+
+一般
+====
+
+用語集
+------
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">8. レベルテスト報告</a><ul>
+<li><a class="reference internal" href="#id2">8.1. 記法</a></li>
+<li><a class="reference internal" href="#id3">8.2. 作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ar.html"
+                        title="previous chapter">7. 異常報告</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/ltr.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ar.html" title="7. 異常報告"
+             >previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

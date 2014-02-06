@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. レベルテスト計画 &mdash; IEEE829 Extensions 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="IEEE829 Extensions 0.0.1 documentation" href="index.html" />
+    <link rel="next" title="3. レベルテスト設計" href="ltd.html" />
+    <link rel="prev" title="1. マスターテスト計画" href="mtp.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ltd.html" title="3. レベルテスト設計"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mtp.html" title="1. マスターテスト計画"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>2. レベルテスト計画<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>レベルテスト計画 (Level Test Plan) は、個々のテストの対象範囲、手法、（人的、物的、ソフトウェア的な）リソース、テスト実施のスケジュールについて記述する文書です。</p>
+<p>テストすべき機能や、テスト実施のために完了すべきタスク、個々のテストの責任者、テスト実施によって発生するリスクをここで定義します。</p>
+<div class="section" id="id2">
+<h2>2.1. 記法<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<dl class="directive">
+<dt id="directive-ieee829:ltp">
+<tt class="descname">.. ieee829:ltp::</tt><tt class="descclassname"> id</tt><a class="headerlink" href="#directive-ieee829:ltp" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト計画のセクションを作成します。セクションには <tt class="docutils literal"><span class="pre">id</span></tt> で文書識別番号を設定します。たとえば <tt class="docutils literal"><span class="pre">id</span></tt> に 1 を指定すると、このセクションに <tt class="docutils literal"><span class="pre">LTP-1</span></tt> というユニークなIDが付与されます。</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">:title</span></tt></dt>
+<dd>文書のタイトルを指定します。指定しない場合はIDがタイトルになります。</dd>
+</dl>
+</dd></dl>
+
+<dl class="role">
+<dt id="role-ieee829:ltp">
+<tt class="descname">:ieee829:ltp:</tt><a class="headerlink" href="#role-ieee829:ltp" title="Permalink to this definition">¶</a></dt>
+<dd><p>レベルテスト計画を参照します。<tt class="docutils literal"><span class="pre">:ieee829:ltp:`1`</span></tt> で <tt class="docutils literal"><span class="pre">LTP-1</span></tt> を参照します。</p>
+</dd></dl>
+
+</div>
+<div class="section" id="id3">
+<h2>2.2. 作成例<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>参考</dt>
+<dd><a class="reference external" href="http://www.qbook.jp/qptemplate/testieee829s/2">http://www.qbook.jp/qptemplate/testieee829s/2</a></dd>
+</dl>
+<p>サンプル:</p>
+<div class="highlight-python"><div class="highlight"><pre>.. ieee829:ltp:: 1
+   :title: レベルテスト計画 作成例
+
+概要
+====
+
+対象範囲
+--------
+
+参考資料
+--------
+
+レベルテスト全体像
+------------------
+
+テストクラスと全体テスト条件
+----------------------------
+
+レベルテスト計画詳細
+====================
+
+テスト項目と識別子
+------------------
+
+テスト追跡表
+------------
+
+テスト対象機能
+--------------
+
+テスト非対象機能
+----------------
+
+アプローチ
+----------
+
+合否基準
+--------
+
+一時停止基準と再開要件
+----------------------
+
+テスト成果物
+------------
+
+テスト管理
+==========
+
+計画されたアクティビティとタスク；テストの流れ
+----------------------------------------------
+
+環境／設備
+----------
+
+責任と権限
+----------
+
+関係者間のコミュニケーション
+----------------------------
+
+リソース配分
+------------
+
+トレーニング
+------------
+
+スケジュール・見積り・コスト
+----------------------------
+
+リスクと対応策
+--------------
+
+一般
+====
+
+品質保証の手順
+--------------
+
+メトリクス
+----------
+
+テストカバレッジ
+----------------
+
+用語集
+------
+
+改訂履歴
+--------
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. レベルテスト計画</a><ul>
+<li><a class="reference internal" href="#id2">2.1. 記法</a></li>
+<li><a class="reference internal" href="#id3">2.2. 作成例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="mtp.html"
+                        title="previous chapter">1. マスターテスト計画</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ltd.html"
+                        title="next chapter">3. レベルテスト設計</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/ltp.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ltd.html" title="3. レベルテスト設計"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mtp.html" title="1. マスターテスト計画"
+             >previous</a> |</li>
+        <li><a href="index.html">IEEE829 Extensions 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Jun SAITO.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>
